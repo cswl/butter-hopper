@@ -1,0 +1,13 @@
+*.log
+*.pyc
+.cache/
+.coverage
+.idea/
+.vscode/
+butter_hopper.egg-info/
+build/
+dist/
+docs/build/
+venv/
+wheelhouse/
+pip-wheel-metadata/

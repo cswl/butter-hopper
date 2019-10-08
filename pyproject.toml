@@ -1,0 +1,17 @@
+[metadata]
+name = 'butter-hopper'
+version = '0.0.1'
+description = ''
+author = 'Cswl Coldwind'
+author_email = 'cswl1337@gmail.com'
+license = 'MIT/Apache-2.0'
+url = 'https://github.com/_/butter-hopper'
+
+[requires]
+python_version = ['2.7', '3.5', '3.6', 'pypy', 'pypy3']
+
+[build-system]
+requires = ['setuptools', 'wheel', 'm2r']
+
+[tool.hatch.commands]
+prerelease = 'hatch build'

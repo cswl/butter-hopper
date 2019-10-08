@@ -1,0 +1,15 @@
+{
+    "Ubuntu": [{
+            "release": "18.10",
+            "code": "cosmic",
+            "uri": "https://cloud-images.ubuntu.com/cosmic/current/cosmic-server-cloudimg-amd64-root.tar.xz"
+        },
+        {
+            "release": "18.04",
+            "is_lts": true,
+            "code": "bionic",
+            "uri": "https://cloud-images.ubuntu.com/bionic/current/bionic-server-cloudimg-amd64-root.tar.xz"
+
+        }
+    ]
+}

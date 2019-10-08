@@ -1,0 +1,5 @@
+#!/bin/sh
+exec tail -n +3 $0
+
+source $prefix/extract.cfg
+

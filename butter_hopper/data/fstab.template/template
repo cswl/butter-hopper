@@ -1,0 +1,14 @@
+# DISTRO Root
+UUID=                                      /              btrfs  rw,relatime,space_cache,subvol=/distros/arch/@     0  0
+
+# DISTRO Home
+UUID=                                      /home          btrfs  rw,relatime,space_cache,subvol=/distros/arch/home  0  0
+
+# Common 
+UUID=                                      /home/common   btrfs  rw,relatime,space_cache,subvol=/common             0  0
+
+# Nix store
+UUID=                                      /nix/store     btrfs  rw,relatime,space_cache,subvol=/nixpkgs     0  0
+ 
+# Shared storage
+UUID=                                      /media/shared  ext4   rw,relatime                                        0  2

@@ -1,0 +1,11 @@
+#compdef btrhop butter-hopper
+
+_btrhop() { 
+  typeset -A opt_args
+  local context state line curcontext="$curcontext"
+
+  local ret=1
+
+}
+
+_btrhop "$@"

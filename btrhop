@@ -1,0 +1,29 @@
+#!/usr/bin/env python3
+
+# Setups virtualenv to run btrhop for testing.
+
+import sys
+from subprocess import call
+
+from pathlib import Path, PurePath
+
+VENV_DIR='venv'
+
+# Works on symlinks and `./program`
+def get_script_path() :
+    return  PurePath(Path(Path(sys.argv[0])).resolve(strict=True)).parent
+
+def call_python(pp, prg, args) : 
+    """
+    Pass the script and its arguments to the Python interpreter in the venv.
+    """
+    prg_path = pp.joinpath(prg)
+    cmd = [str(prg_path)] + args
+    call(cmd)
+
+def init():
+    args = sys.argv[1:]
+    python_path = get_script_path().joinpath(VENV_DIR).joinpath("bin/")
+    call_python(python_path, 'btrhop', args)
+
+init()

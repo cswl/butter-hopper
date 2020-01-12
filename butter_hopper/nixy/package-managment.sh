@@ -5,3 +5,6 @@ update_channels:
 
 Upgrade Packagee
 nix-env -u --dry-run
+
+Uprade system:
+'nix-channel --update && nix-env -iA nixpkgs.nix '
